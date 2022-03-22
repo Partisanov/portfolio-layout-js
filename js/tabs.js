@@ -2,7 +2,6 @@ const tabButtons = document.querySelectorAll('.design-list__item')
 const tabDescriptions = document.querySelectorAll('.design__descr')
 const tabImages = document.querySelectorAll('.design-images')
 const featureImages = document.querySelectorAll('.feature__img')
-const titlePage = document.querySelector('title')
 const tabsTitle = document.querySelectorAll('.design__title')
 
 const changeContent = (array, value) => {
@@ -26,7 +25,6 @@ tabButtons.forEach((tabButton) => {
 
         tabButtons.forEach((btn) => {
             if (btn === event.target) {
-                titlePage.innerHTML = btn.textContent
                 btn.classList.add('design-list__item_active')
             } else {
                 btn.classList.remove('design-list__item_active')
